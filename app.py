@@ -36,7 +36,7 @@ def load_model():
     # Build a new model with the same architecture
     model = build_generator()
     # Load the saved weights
-    model.load_weights('cgan_generator.h5')
+    model.load_weights('cgan_generator.weights.h5')
     return model
 
 generator = load_model()
