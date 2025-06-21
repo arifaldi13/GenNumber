@@ -4,6 +4,8 @@ from tensorflow import keras
 from tensorflow.keras import layers
 import numpy as np
 
+st.set_page_config(layout="wide")
+
 # --- 1. Define Model Architecture ---
 # This MUST be the same Keras architecture as in the training script.
 
@@ -42,7 +44,6 @@ def load_model():
 generator = load_model()
 
 # --- 3. Create the Streamlit Web App UI ---
-st.set_page_config(layout="wide")
 st.title("Handwritten Digit Image Generator (TensorFlow/Keras)")
 st.write("Generate synthetic MNIST-like images using a Conditional GAN model trained from scratch.")
 
